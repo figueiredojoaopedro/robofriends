@@ -3,15 +3,15 @@
 // that's why we start creating a Card code, that can be reusable for other stuff, obviously, if it's needed
 import React from 'react';
 
-const Card = () =>{
+const Card = (properties) =>{
     return(
         <div className='bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
             <div className='image'>
-                <img src='https://robohash.org/themith?200x200' alt='card picture'></img>
+                <img src={`https://robohash.org/${properties.id}?200x200`} alt='card picture'></img>
             </div>
             <div>
-                <h2>The Mith</h2>
-                <p>themith@gmail.com</p>
+                <h2>{properties.name}</h2>
+                <p>{properties.email}</p>
             </div>
         </div>
     );
