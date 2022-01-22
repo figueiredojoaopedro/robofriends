@@ -4,14 +4,15 @@
 import React from 'react';
 
 const Card = (properties) =>{
+    const {name, email, id} = properties
     return(
         <div className='bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
             <div className='image'>
-                <img src={`https://robohash.org/${properties.id}?200x200`} alt='card picture'></img>
+                <img src={`https://robohash.org/${id}?200x200`} alt='card picture'></img>
             </div>
             <div>
-                <h2>{properties.name}</h2>
-                <p>{properties.email}</p>
+                <h2>{name}</h2>
+                <p>{email}</p>
             </div>
         </div>
     );
