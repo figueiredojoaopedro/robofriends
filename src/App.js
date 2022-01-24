@@ -23,7 +23,7 @@ class App extends React.Component {
         console.log(filteredRobots);
         return(
             <div className='tc'>
-                <h1>Robofriends!</h1>
+                <h1 className='white'>Robofriends!</h1>
                 <SearchBox searchChange = {this.searchChange}/>
                 <CardList robots = {filteredRobots}/>
             </div>
