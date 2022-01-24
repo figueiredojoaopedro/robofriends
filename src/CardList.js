@@ -13,7 +13,7 @@ const CardList = ({robots}) => {
         // and banng, everythins is working fine, the problem is that idk if the images will be the same everytime we just reload the page.
         // probably the same, cuz it works with reserved words
         <div>
-            {cardEnumeration};
+            {cardEnumeration};  
         </div>
     );
 }
